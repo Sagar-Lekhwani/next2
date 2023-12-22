@@ -58,11 +58,11 @@ const SignIn = () => {
           Sign In
         </button>
         <p className="mt-2 text-sm text-gray-600">
-          Don't have an account?{" "}
-          <a href="/signUp" className="text-blue-500">
-            Sign Up
-          </a>
-        </p>
+  Don&apos;t have an account?{" "}
+  <a href="/signUp" className="text-blue-500">
+    Sign Up
+  </a>
+</p>
       </div>
     </div>
   );
