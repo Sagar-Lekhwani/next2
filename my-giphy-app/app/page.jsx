@@ -1,4 +1,4 @@
-// eslint-disable react/jsx-key 
+/* eslint-disable react/jsx-key */
 "use client";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/app/firebase/config";
@@ -7,12 +7,11 @@ import { signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { Card } from "@/components/cards/Card";
 import { Pagination } from "@/components/pagination/Pagination";
-import { useLocation } from "next/router";
 
 export default function Home() {
   const [user] = useAuthState(auth);
   const router = useRouter();
-  const userSession = sessionStorage?.getItem("user");
+  // const userSession = sessionStorage?.getItem("user");
 
   const [data, setData] = useState(null);
   const [query, setQuery] = useState("");
