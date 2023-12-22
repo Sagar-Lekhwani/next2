@@ -7,6 +7,7 @@ import { signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { Card } from "@/components/cards/Card";
 import { Pagination } from "@/components/pagination/Pagination";
+import { useLocation } from "next/router";
 
 export default function Home() {
   const [user] = useAuthState(auth);
