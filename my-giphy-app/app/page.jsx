@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key */
+// eslint-disable react/jsx-key 
 "use client";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/app/firebase/config";
